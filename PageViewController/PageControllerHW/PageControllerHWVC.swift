@@ -19,9 +19,16 @@ class PageControllerHWVC: UIViewController {
     var controllers: [UIViewController] = [UIViewController]()
     
     var pages: [PageObj] = [
-        PageObj(text: "Chapter - 1", color: .systemPink, image: UIImage(named: "puppy.jpeg")),
-        PageObj(text: "Chapter - 2", color: .green, image: UIImage(named: "puppy.jpeg")),
-        PageObj(text: "Chapter - 3", color: .red, image: UIImage(named: "puppy.jpeg"))
+        PageObj(text: "Story - 1", color: .systemMint, image: UIImage(named: "p1.jpeg")),
+        PageObj(text: "Story - 2", color: .systemPink, image: UIImage(named: "p2.jpeg")),
+        PageObj(text: "Story - 3", color: .systemYellow, image: UIImage(named: "p3.jpeg")),
+        PageObj(text: "Story - 4", color: .systemMint, image: UIImage(named: "p4.jpeg")),
+        PageObj(text: "Story - 5", color: .systemPink, image: UIImage(named: "p5.jpeg")),
+        PageObj(text: "Story - 6", color: .systemYellow, image: UIImage(named: "p6.jpeg")),
+        PageObj(text: "Story - 7", color: .systemMint, image: UIImage(named: "p7.jpeg")),
+        PageObj(text: "Story - 8", color: .systemPink, image: UIImage(named: "p8.jpeg")),
+        PageObj(text: "Story - 9", color: .systemYellow, image: UIImage(named: "p9.jpeg")),
+        PageObj(text: "Story - 10", color: .systemPurple, image: UIImage(named: "p10.jpeg"))
     ]
     
 

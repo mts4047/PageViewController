@@ -16,6 +16,7 @@ class TextVC: UIViewController {
     var chImage = UIImage()
     
     
+    
     private let myTextView: UITextView = {
        let textView = UITextView()
         textView.font = .systemFont(ofSize: 24)
@@ -55,7 +56,7 @@ class TextVC: UIViewController {
         super.viewDidLayoutSubviews()
         myTextView.frame = CGRect(x: 20, y: 50, width: view.frame.size.width-40, height: view.frame.size.height)
         bgView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
-        myImageView.frame = CGRect(x: 20, y: 100, width: view.frame.size.width, height: view.frame.size.height)
+        myImageView.frame = CGRect(x: 50, y: 110, width: view.frame.size.width - 100, height: view.frame.size.height - 600)
 
     }
     
