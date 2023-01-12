@@ -22,7 +22,7 @@ class PageControllerHWVC: UIViewController {
         PageObj(text: "Story - 1", color: .systemMint, image: UIImage(named: "p1.jpeg")),
         PageObj(text: "Story - 2", color: .systemPink, image: UIImage(named: "p2.jpeg")),
         PageObj(text: "Story - 3", color: .systemYellow, image: UIImage(named: "p3.jpeg")),
-        PageObj(text: "Story - 4", color: .systemMint, image: UIImage(named: "p4.jpeg")),
+        PageObj(text: "Story - 4", color: .systemPurple, image: UIImage(named: "p4.jpeg")),
         PageObj(text: "Story - 5", color: .systemPink, image: UIImage(named: "p5.jpeg")),
         PageObj(text: "Story - 6", color: .systemYellow, image: UIImage(named: "p6.jpeg")),
         PageObj(text: "Story - 7", color: .systemMint, image: UIImage(named: "p7.jpeg")),
