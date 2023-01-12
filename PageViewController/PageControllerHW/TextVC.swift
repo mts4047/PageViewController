@@ -15,6 +15,8 @@ class TextVC: UIViewController {
     
     var chImage = UIImage()
     
+    var myStoryText: String
+    
     
     
     private let myTextView: UITextView = {
@@ -29,13 +31,23 @@ class TextVC: UIViewController {
     
     let myImageView = UIImageView()
     
-    init(with text: String, bgColor: UIColor, chImage: UIImage) {
+    private let storyTextView: UITextView = {
+        let myStoryTextView = UITextView()
+        myStoryTextView.font = .systemFont(ofSize: 20)
+        myStoryTextView.textColor = .black
+        myStoryTextView.backgroundColor = .clear
+        return myStoryTextView
+    }()
+    
+    init(with text: String, bgColor: UIColor, chImage: UIImage, myStoryText: String) {
         self.myText = text
         self.bgColor = bgColor
         self.chImage = chImage
+        self.myStoryText = myStoryText
         self.myTextView.text = self.myText
         self.bgView.backgroundColor = self.bgColor
         self.myImageView.image = self.chImage
+        self.storyTextView.text = self.myStoryText
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -49,6 +61,7 @@ class TextVC: UIViewController {
         view.addSubview(bgView)
         view.addSubview(myTextView)
         view.addSubview(myImageView)
+        view.addSubview(storyTextView)
         
     }
     
@@ -57,6 +70,7 @@ class TextVC: UIViewController {
         myTextView.frame = CGRect(x: 20, y: 50, width: view.frame.size.width-40, height: view.frame.size.height)
         bgView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
         myImageView.frame = CGRect(x: 50, y: 110, width: view.frame.size.width - 100, height: view.frame.size.height - 600)
+        storyTextView.frame = CGRect(x: 20, y: 420, width: view.frame.size.width-40, height: view.frame.size.height)
 
     }
     
